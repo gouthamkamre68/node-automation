@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    dockerimagename = "ramann123/myimage"
+    dockerimagename = "goutham31/node"
     dockerImage = ""
   }
 
@@ -18,7 +18,7 @@ pipeline {
 
     stage('Pushing Image') {
       environment {
-               registryCredential = 'dockerhublogin'
+               registryCredential = 'gouthamdockerlogin'
            }
       steps{
         script {
